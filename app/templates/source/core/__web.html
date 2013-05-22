@@ -1,0 +1,26 @@
+{% extends "core/__base.html" %}
+
+{% block title_prefix %}yoga, by ampush{% endblock title_prefix %}
+
+{% block body %}
+
+	<!-- AppTools Templates -->
+	<div id='templates' class='hidden resource'>
+		{% block jstemplates %}
+		{% endblock jstemplates %}
+	</div><!-- end #templates -->
+
+	<!-- Application Frame -->
+	<div id='main' class='application'>
+
+		{% block root %}
+		<!-- Appstage -->
+		<div id='appstage' class='yoga light'>
+			{% block stage %}
+			{% endblock stage %}
+		</div><!-- end #appstage -->
+		{% endblock root %}
+
+	</div><!-- end #main -->
+
+{% endblock body %}
